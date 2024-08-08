@@ -111,15 +111,17 @@ margin: 1px;
   }
   nav button{
     padding: 8px 15px;
-
+    animation: tilt-n-move-shaking 0.8s infinite ease-in-out;
     border: none;
     border-radius: 50px;
     background-color: #FF6B00;
     color: #ffffff;
   }
+  nav button:hover{
+    animation: none;
+  }
   .info button{
     padding: 10px 40px;
-
     border: none;
     border-radius: 3px;
     background-color: #FF6B00;
@@ -495,4 +497,11 @@ margin: 1px;
     header nav ul {
       display: flex !important;
     }
+  }
+  @keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
   }

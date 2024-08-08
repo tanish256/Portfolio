@@ -1,6 +1,7 @@
 <!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCEC TECHNOLOGIES</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -27,33 +28,33 @@
           <div class="info1">
             <div class="info">
               <p>Best in Kampala <span class="orange">#1</span></p>
-              <h1>SCEC<br>TECHNOLOGIES</h1>
-              <p>Empower your dreams with our expertise in modern technologies, turning ideas into tech-driven realities for your digital success.</p>
-              <a href="#work"><button>Explore</button></a>
+              <h1 data-aos="fade-up" data-aos-duration="1500">SCEC<br>TECHNOLOGIES</h1>
+              <p data-aos="fade-up" data-aos-duration="2000">Empower your dreams with our expertise in modern technologies, turning ideas into tech-driven realities for your digital success.</p>
+              <a href="#work"><button data-aos="fade-up" data-aos-duration="2000">Explore</button></a>
             </div>
             <div class="img">
-              <img src="hero1-min.jpeg" alt="">
+              <img data-aos="fade-left" data-aos-duration="2000" data-aos-offset="500" src="hero1-min.jpeg" alt="">
             </div>
           </div>
         </div>
       </header>
       <main>
         <section class="detail" id="abt-us">
-          <div class="about">
+          <div data-aos="fade-up"  class="about">
             <h2>Leading In Website<br>Designing</h2>
             <p>We craft online presences from branding to web design and digital marketing.</p>
           </div>
           
           <div class="detail">
-            <div class="d1">
+            <div data-aos="fade-up" data-aos-duration="800" class="d1">
               <h4>5+ Years</h4>
               <p>Over 5 years of expert digital solutions.</p>
             </div>
-            <div class="d1">
+            <div data-aos="fade-up" data-aos-duration="900"  class="d1">
               <h4>5.0</h4>
               <p>Excellence with a perfect 5.0 rating.</p>
             </div>
-            <div class="d1">
+            <div data-aos="fade-up" data-aos-duration="1000"  class="d1">
               <h4>20+ Clients</h4>
               <p>Trusted by 20+ satisfied businesses.</p>
             </div>
@@ -63,40 +64,40 @@
         </section>
 
         <section class="video">
-          <video style="width: 100%; height: 400px; background-color: #474747;" controls="" src="/web/20240128102621im_/https://www.scec.tech/img/web.MP4"></video>
+          <video data-aos="fade-up" style="width: 100%; height: 400px; background-color: #474747;" controls="" src="/web/20240128102621im_/https://www.scec.tech/img/web.MP4"></video>
         </section>
         <section class="services" id="services">
-          <div class="about">
-            <h3>Our Services</h3>
+          <div data-aos="fade-up" class="about">
+            <h3 >Our Services</h3>
             <p>Empower your brand online with our comprehensive digital solutions, uniting strategic expertise and creative innovation for a standout presence in the digital landscape.</p>
           </div>
 
-          <div class="card active">
+          <div data-aos="fade-up" class="card active">
             <img src="Windows 10 Personalization.png" alt="Web Design Icon">
             <h4>Web Design</h4>
             <p>Create a lasting impression with our captivating web designs, tailored to your unique vision and brand identity.</p>
           </div>
         
-          <div class="card">
+          <div data-aos="fade-up" class="card">
             <img src="Commercial.png" alt="Digital Marketing Icon">
             <h4>Digital Marketing</h4>
             <p>Drive measurable success with strategic online campaigns and targeted SEO.</p>
           </div>
         
-          <div class="card">
+          <div data-aos="fade-up" class="card">
             <img src="Logo.png" alt="Branding Icon">
             <h4>Branding</h4>
             <p>Build a lasting impression with distinctive brand identities and strategies.</p>
           </div>
         
-          <div class="card">
+          <div data-aos="fade-up" class="card">
             <img src="Design.png" alt="UI/UX Design Icon">
             <h4>UI/UX Design</h4>
             <p>Ensure a seamless user experience with visually appealing interfaces.</p>
           </div>
         
 
-          <div class="card" style="opacity: 0; user-select: none;"> 
+          <div data-aos="fade-up" class="card" style="opacity: 0; user-select: none;"> 
           </div>
         </section>
 
@@ -105,7 +106,7 @@
           <hr>
           <div class="w-list">
 
-            <div class="w-card">
+            <div data-aos="fade-right" class="w-card">
               <img src="highlands.png" alt="">
               <div class="info">
                 <h3>Web Design &amp; Development</h3>
@@ -116,7 +117,7 @@
             </div>
             <hr width="100%">
 
-            <div class="w-card">
+            <div data-aos="fade-right" class="w-card">
               <img src="ngo website.png" alt="">
               <div class="info">
                 <h3>Web Design &amp; Development</h3>
@@ -127,7 +128,7 @@
             </div>
             <hr width="100%">
 
-            <div class="w-card">
+            <div data-aos="fade-right" class="w-card">
                 <img src="aseries.png" alt="">
                 <div class="info">
                   <h3>Web Design &amp; Development</h3>
@@ -141,7 +142,7 @@
         </section>
       </main>
 
-      <footer>
+      <footer data-aos="zoom-in" data-aos-duration="800" >
         <nav>
           <div class="logo">
             <h2>SCEC <br>TECHNOLOGIES</h2>
@@ -178,7 +179,9 @@ You Focus On What Truly Matters
       </footer>
     </div>
     <script src="code.jquery.com_jquery-3.6.0.js.download"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      AOS.init();
       $(document).ready(function () {
         $("#burger-menu").click(function () {
           $(this).toggleClass("close");
