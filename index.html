@@ -58,7 +58,7 @@
               <p>Best in Kampala <span class="orange">#1</span></p>
               <h1 data-aos="fade-up" data-aos-duration="1500">SCEC<br>TECHNOLOGIES</h1>
               <p data-aos="fade-up" data-aos-duration="2000">Empower your dreams with our expertise in modern technologies, turning ideas into tech-driven realities for your digital success.</p>
-              <a href="#work"><button data-aos="fade-up" data-aos-duration="2000">Explore</button></a>
+              <a href="#work"><button>Explore</button></a>
             </div>
             <div class="img">
               <img data-aos="fade-left" data-aos-duration="2000" data-aos-offset="500" src="hero1-min.jpeg" alt="">
@@ -67,24 +67,30 @@
         </div>
       </header>
       <main>
-        <section class="detail" id="abt-us">
-          <div data-aos="fade-up" data-aos-duration="900" class="about">
-            <h2>Leading In Website<br>Designing</h2>
-            <p>We craft online presences from branding to web design and digital marketing.</p>
+        <section  class="detail" id="abt-us">
+          <div data-aos="fade-up" data-aos-duration="1200"  class="about">
+            <h2>SCEC TECHNOLOGIES</h2>
+            <p>At SCEC Technologies, we are passionate about transforming ideas into digital realities. With over five years of expertise, we specialize in crafting innovative solutions in web design, digital marketing, branding, UI/UX design, and IT infrastructure installation. Based in Uganda, we are committed to empowering businesses with cutting-edge technology, strategic creativity, and a customer-centric approach. Trusted by numerous satisfied clients, we pride ourselves on delivering excellence, fostering strong partnerships, and creating a standout presence for brands in the ever-evolving digital landscape. Let us handle the tech while you focus on what truly matters!</p>
           </div>
-          
-          <div class="detail">
-            <div data-aos="fade-up" data-aos-duration="1000" class="d1">
-              <h4>5+ Years</h4>
-              <p>Over 5 years of expert digital solutions.</p>
+          <div data-aos="fade-up" data-aos-duration="1200" class="detail">
+            <div class="l">
+              <img src="logo.png" alt="">
             </div>
-            <div data-aos="fade-up" data-aos-duration="1100"  class="d1">
-              <h4>5.0</h4>
-              <p>Excellence with a perfect 5.0 rating.</p>
+            <div class="d1">
+              <h4>5+</h4>
+              <p>Years Experience</p>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1200"  class="d1">
-              <h4>20+ Clients</h4>
-              <p>Trusted by 20+ satisfied businesses.</p>
+            <div class="d1">
+              <h4>12+</h4>
+              <p>Completed Projects</p>
+            </div>
+            <div  class="d1">
+              <h4>4.7</h4>
+              <p>Rating on Google</p>
+            </div>
+            <div class="d1">
+              <h4>8+</h4>
+              <p>Satisfied Businesses.</p>
             </div>
           </div>
           
@@ -92,7 +98,7 @@
         </section>
 
         <section class="video">
-          <video data-aos="fade-up" data-aos-duration="1200" style="width: 100%; height: 400px; background-color: #474747;" controls="" src="/web/20240128102621im_/https://www.scec.tech/img/web.MP4"></video>
+          <video style="width: 100%; height: 400px; background-color: #474747;" controls="" src="/web/20240128102621im_/https://www.scec.tech/img/web.MP4"></video>
         </section>
         <section class="services" id="services">
           <div data-aos="fade-up" data-aos-duration="1200" class="about">
@@ -183,7 +189,7 @@
         </section>
       </main>
 
-      <footer data-aos="zoom-in" data-aos-duration="1200" >
+      <footer >
         <nav>
           <div class="logo">
             <h2>SCEC <br>TECHNOLOGIES</h2>
@@ -211,7 +217,7 @@ You Focus On What Truly Matters
             border: 0.5px solid rgba(255, 255, 255, 0.5);
           ">
         <div class="pp">
-          <p>© 2022 scec-technologies.com, All rights reserved.</p>
+          <p>© <span id="year"></span> scec-technologies.com, All rights reserved.</p>
           <ul>
             <li><a href="https://scec-technologies.com/">Privacy policy</a></li>
             <li><a href="https://scec-technologies.com/">Terms of service</a></li>
@@ -226,6 +232,7 @@ You Focus On What Truly Matters
     </script>
     <script>
       $(document).ready(function () {
+        $("#year").text(new Date().getFullYear());
         $("#burger-menu").click(function () {
           $(this).toggleClass("close");
           $("#menu").slideToggsle();
