@@ -36,7 +36,7 @@ margin: 1px;
     height: 90vh;
     display: flex;
     align-items: center;
-    background-image: url(bghead.png);
+    background-image: url(bghead.webp);
     overflow-y: hidden;
     color: white;
     flex-direction: column;
@@ -164,10 +164,10 @@ margin: 1px;
     align-items: center;
     border-radius: 10px;
     box-shadow: #0000001c 1px 1px 5px;
-    P{
-      width: 90%;
+  }
+  section.detail div.about p{
+    width: 90%;
       color: #000000ba;
-    }
   }
   section.detail div.about h2{
     font-size: 2rem;
@@ -191,12 +191,12 @@ margin: 1px;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    img{
-      width: 80%;
+  }
+  div.detail .l img{
+    width: 80%;
       border-radius: 15px;
       object-fit: cover;
       aspect-ratio: 3.6/2;
-    }
   }
   div.detail h4{
     color: #FF6B00;
